@@ -1,39 +1,52 @@
 namespace Teste
 {
-     class Operation 
-{
-    public double saldo = 0;
-     public bool Sacar(double valor){
-
-        if(valor > this.saldo)
-        {
-            Console.WriteLine("Saldo Menor"); 
-            return false;
-        }
-        else
-        {
-           this.saldo = saldo - valor; 
-            return true;
-        }
-    }
-
-    public void Depositar(double valor)
+    class Operation 
     {
-        this.saldo += valor;
-    }
+        private double _saldo;
 
-     public bool Transferir(double valor, ContaCorrente contaDestino)
-    {
-        if(this.saldo < valor)
+        public double Saldo
         {
-            return false;
+            get
+            {
+                return _saldo;
+            }
+            set
+            {
+                if(value < 0)
+                {
+                    return;
+                }
+            }
         }
 
-        this.saldo -= valor;
-        Depositar(valor);
-        return true;
-
+         public bool Sacar(double valor)
+         {
+              if(valor > this._saldo)
+               {
+                  Console.WriteLine("Saldo Menor"); 
+                  return false;
+              }
+             else
+              {
+                 this._saldo = _saldo - valor; 
+                 return true;
+              }
+         }
+         public void Depositar(double valor)
+         {
+                 this._saldo += valor;
+         }
+         
+         public bool Transferir(double valor, ContaCorrente contaDestino)
+          {
+               if(this._saldo < valor)
+                 {
+               return false;
+                  }
+                this._saldo -= valor;
+                Depositar(valor);
+                return true;
+         }
     }
-}
 
 }
