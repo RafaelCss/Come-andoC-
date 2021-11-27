@@ -9,6 +9,7 @@
             conta.saldo.saldo = 200;
             conta.conta = 555840;
             conta.agencia = 158;
+            conta.saldo.Depositar(500);
             
         Console.WriteLine("Nome Usuario : "+ conta.titular.user);
         Console.WriteLine("Cpf Usuario : "+ conta.cpf.cpf);
