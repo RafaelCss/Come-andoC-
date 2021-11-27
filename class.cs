@@ -1,4 +1,6 @@
+namespace Teste
 
+ {
 class ContaCorrente 
 {
     public Client titular = new Client();
@@ -6,6 +8,9 @@ class ContaCorrente
     public int conta;
     public int agencia;
     public Operation saldo = new Operation();
+
+}
+
 
 }
 
