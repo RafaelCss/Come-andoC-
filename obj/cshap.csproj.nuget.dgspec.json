@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cShap\\cshap.csproj": {}
+    "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cshap\\cshap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cShap\\cshap.csproj": {
+    "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cshap\\cshap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cShap\\cshap.csproj",
+        "projectUniqueName": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cshap\\cshap.csproj",
         "projectName": "cshap",
-        "projectPath": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cShap\\cshap.csproj",
+        "projectPath": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cshap\\cshap.csproj",
         "packagesPath": "C:\\Users\\rf201\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cShap\\obj\\",
+        "outputPath": "C:\\Users\\rf201\\OneDrive\\Área de Trabalho\\Alura\\cshap\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rf201\\AppData\\Roaming\\NuGet\\NuGet.Config",

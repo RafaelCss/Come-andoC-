@@ -4,24 +4,38 @@
     {
          public static void Main(string[] args)
         {
-            ContaCorrente contaJoão = new ContaCorrente();
+            ContaCorrente contaJoao = new ContaCorrente();
             ContaCorrente contaCamilo = new ContaCorrente();
-         
+
+            contaCamilo.Titular.User= "Camilo";
+            contaCamilo.Titular.Cpf= 15565455;           
             contaCamilo.conta = 555840;
             contaCamilo.agencia = 158;
             contaCamilo.saldo.Depositar(500);
 
-            contaJoão.conta = 158840;
-            contaJoão.agencia = 938;
-            contaJoão.saldo.Depositar(55100);
-     
+
+            contaJoao.Titular.User= "João";
+            contaJoao.Titular.Cpf= 11111100; 
+            contaJoao.conta = 158840;
+            contaJoao.agencia = 938;
+            contaJoao.saldo.Depositar(100);
+
+            
+            contaCamilo.saldo.Transferir(100, contaJoao);
+
       
 
-        Console.WriteLine("Nome Usuario : "+ contaJoão.Titular.User);
-        Console.WriteLine("Cpf Usuario : "+ contaJoão.Titular.Cpf);
-        Console.WriteLine("Conta Usuario : "+contaJoão.conta);
-        Console.WriteLine("Agencia Usuario : "+contaJoão.agencia);
-        Console.WriteLine("Saldo Usuario : "+contaJoão.saldo.Saldo);
+        Console.WriteLine("Nome Usuario : "+ contaJoao.Titular.User);
+        Console.WriteLine("Cpf Usuario : "+ contaJoao.Titular.Cpf);
+        Console.WriteLine("Conta Usuario : "+contaJoao.conta);
+        Console.WriteLine("Agencia Usuario : "+contaJoao.agencia);
+        Console.WriteLine("Saldo Usuario : "+contaJoao.saldo.Saldo);
+        Console.WriteLine("----------------");
+        Console.WriteLine("Nome Usuario : "+ contaCamilo.Titular.User);
+        Console.WriteLine("Cpf Usuario : "+ contaCamilo.Titular.Cpf);
+        Console.WriteLine("Conta Usuario : "+contaCamilo.conta);
+        Console.WriteLine("Agencia Usuario : "+contaCamilo.agencia);
+        Console.WriteLine("Saldo Usuario : "+contaCamilo.saldo.Saldo);
         Console.WriteLine("----------------");
 
 
