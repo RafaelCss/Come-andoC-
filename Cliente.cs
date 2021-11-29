@@ -3,13 +3,31 @@
 
    class Client 
    {
-   public string user = "João da Silva";  
-   public int cpf = 555555555;
-   public string user2 = "Camilo dos Santos";  
-   public int cpf2 =1238942575;
+      public Client(string user, int cpf)
+      {
+        string User = user;
+        int Cpf = cpf;
+      }
+      
+   private string _user;
+   public string User 
+   {
+      get
+      {
+         return this._user;
+      } 
+   }
+   private int _cpf;
+
+    public int Cpf 
+   {
+      get
+      {
+         return this._cpf;
+      } 
+   }
 
 
    }
-
 }
 
